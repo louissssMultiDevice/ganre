@@ -32,7 +32,7 @@
     document.getElementById('rankForm').addEventListener('submit', async (e) => {
       e.preventDefault();
       const data = Object.fromEntries(new FormData(e.target).entries());
-      const res = await fetch('https://ya/order', {
+      const res = await fetch('https://104.21.80.1/order', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
